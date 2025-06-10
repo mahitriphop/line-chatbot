@@ -1,0 +1,13 @@
+langchain
+huggingface-hub
+sentence-transformers
+chromadb-client
+pypdf
+ollama
+pdfplumber
+pytesseract
+pdf2image
+langchain-community
+ipywidgets
+Chroma
+chromadb
