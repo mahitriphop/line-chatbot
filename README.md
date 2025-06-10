@@ -23,6 +23,16 @@
 ##### เราต้องไปติดตั้งจาก https://ollama.com/
 
 ---
+## Output (New)
+
+##### Data     : C:\Users\$USER$\line-chatbot\demo\Files\Testing\pdf\medium.pdf
+##### Question : standardization คืออะไร
+
+```
+'ขั้นตอนแรกของการวิเคราะห์ PCA คือการ Standardization เพื่อให้แต่ละตัวแปรมีผลต่อการวิเคราะห์เท่าๆ กัน โดยทำโดยลบค่าเฉลี่ยออกจากแต่ละตัวแปรแล้วหารด้วยมาตรฐานความผิดพลาด (Standard Deviation)'
+```
+
+---
 
 ## Latest Version of README
 
