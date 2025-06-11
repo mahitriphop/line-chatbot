@@ -32,6 +32,10 @@ pip install -r requirements.txt
 ```
 ollama pull llama3.2
 ```
+หากเราติดตั้งสำเร็จเราสามารถทดสอบการทำงานของโมเดลโดยให้รัน cmd หรือ Terminal
+```
+ollama run llama3.2
+```
 ---
 ## Output (New)
 
