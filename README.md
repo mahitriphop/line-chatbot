@@ -13,11 +13,17 @@
 
 ## Installing
 ##### เริ่มต้นจากการติดตั้งไลบรารี่ที่จำเป็นต่อการทำงานโดยใช้คำสั่งต่อไปนี้
-```git clone https://github.com/mahitriphop/line-chatbot.git```
+```
+git clone https://github.com/mahitriphop/line-chatbot.git
+```
 ##### หลังจากนั้นให้เข้าไปยังโฟลเดอร์
-```cd ./line-chatbot```
+```
+cd ./line-chatbot
+```
 ##### สุดท้ายติดติ้งไลบรารี่ทั้งหมดที่จำเป็น
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 ## Installing Model
 ##### เราต้องไปติดตั้งจาก https://ollama.com/
