@@ -34,9 +34,8 @@ pip install -r requirements.txt
 ##### Data     : C:\Users\USERNAME\line-chatbot\demo\Files\Testing\pdf\medium.pdf
 ##### Question : standardization คืออะไร
 
-```
-'ขั้นตอนแรกของการวิเคราะห์ PCA คือการ Standardization เพื่อให้แต่ละตัวแปรมีผลต่อการวิเคราะห์เท่าๆ กัน โดยทำโดยลบค่าเฉลี่ยออกจากแต่ละตัวแปรแล้วหารด้วยมาตรฐานความผิดพลาด (Standard Deviation)'
-```
+`'ขั้นตอนแรกของการวิเคราะห์ PCA คือการ Standardization เพื่อให้แต่ละตัวแปรมีผลต่อการวิเคราะห์เท่าๆ กัน โดยทำโดยลบค่าเฉลี่ยออกจากแต่ละตัวแปรแล้วหารด้วยมาตรฐานความผิดพลาด (Standard Deviation)'
+`
 
 ---
 
