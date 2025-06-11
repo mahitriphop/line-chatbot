@@ -26,8 +26,12 @@ pip install -r requirements.txt
 ```
 
 ## Installing Model
-##### เราต้องไปติดตั้งจาก https://ollama.com/
+##### เราต้องไปติดตั้งจาก https://ollama.com/ หรือ https://ollama.com/download หลังจากติดตั้งตัวโปรแกรม ollama จะสามารถติดตั้งโมเดลได้โดยใช้คำสั่งดังต่อไปนี้
+"โดยใช้คำสั่ง pull : Pull a model from a registry"
 
+```
+ollama pull llama3.2
+```
 ---
 ## Output (New)
 
