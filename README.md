@@ -25,7 +25,7 @@
 ---
 ## Output (New)
 
-##### Data     : C:\Users\$USER$\line-chatbot\demo\Files\Testing\pdf\medium.pdf
+##### Data     : C:\Users\USERNAME\line-chatbot\demo\Files\Testing\pdf\medium.pdf
 ##### Question : standardization คืออะไร
 
 ```
