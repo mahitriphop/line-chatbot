@@ -45,8 +45,12 @@ Question : standardization คืออะไร
 `'ขั้นตอนแรกของการวิเคราะห์ PCA คือการ Standardization เพื่อให้แต่ละตัวแปรมีผลต่อการวิเคราะห์เท่าๆ กัน โดยทำโดยลบค่าเฉลี่ยออกจากแต่ละตัวแปรแล้วหารด้วยมาตรฐานความผิดพลาด (Standard Deviation)'
 `
 
+เรามีการเอกสารใช้ .pdf หรือ .png/.jpg โดยเรานำไปแปลงเป็นตาราง (table) เช่น .csv, .xlsm เป็นต้นโดยที่ในตอนนี้เราใช้วิธีการแปลงผ่านเว็บไซต์ `https://www.extracttable.com/` แล้วนำขอมูลที่ได้มา .csv นำไปใช้งานต่อ function ที่สร้างขึ้น `trans_table2vector.py` เพื่อทำการแปลงข้อมูลที่เป็น .csv ไปเป็น text แล้วจึงแปลงเป็นเวกเตอร์ (vector) สุดท้ายนำข้อมูลไปใช้งานบน vector database โดยใช้ embeddings model และนำไปใช้เป็นฐานข้อมูลให้ Chatbot อ้างอิงจาก context เหล่านี้   
+
+
+
 ---
 
 ## Latest Version of README
-
-version 0.0.0
+version 0.0.1 (6/12/25)
+version 0.0.0 (6/9/25)
