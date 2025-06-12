@@ -65,5 +65,5 @@ Question : standardization คืออะไร
 ---
 
 ## Latest Version of README
-version 0.0.1 (6/12/25)
+version 0.0.1 (6/12/25)  
 version 0.0.0 (6/9/25)
