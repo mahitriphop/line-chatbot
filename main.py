@@ -10,9 +10,9 @@ font_path = 'modules\THSarabunNew.ttf'
 table = TableToContext(filepath)
 
 # หากต้องการดูข้อมูลที่เป็น DataFrame สามารถเรียกใช้ method ToDataFrame
-table = table.ToDataFrame(filepath=filepath) 
+#table = table.ToDataFrame(filepath=filepath) 
 
-#lines = table.Table2Context(template)
+lines = table.Table2Context(template)
 
 #print(table.to_csv('out.csv', index=False))
 
@@ -21,11 +21,11 @@ table = table.ToDataFrame(filepath=filepath)
 
 # version 0.0.1
 
-#(PDFBuilder(font_path=font_path)
-#    .setup()
-#    .add_lines(lines=lines)
-#    .save("test.pdf")
-#    .execute())
+(PDFBuilder(font_path=font_path)
+    .setup()
+    .add_lines(lines=lines)
+    .save("test.pdf")
+    .execute())
 
 # version 0.0.0
 
