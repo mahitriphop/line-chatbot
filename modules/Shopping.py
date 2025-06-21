@@ -2,12 +2,14 @@ from typing import Callable, List, Dict
 import pandas as pd
 
 class Product:
+    # Encapsulation
     def __init__(self, product_id, name, price):
         self.id = product_id
         self.name = name
         self.price = price 
 
 class CartItem:
+    # Encapsulation
     def __init__(self, product : Product, quantity : int):
         self.product = product
         self.quantity = quantity
@@ -36,7 +38,7 @@ class AddItem:
         products = self.to_products()
 
         for i, product in enumerate(products, start=1):
-            line = "ID: %-4s | Name: %-25s | P: %6d บาท |" % (
+            line = "ID: %-4s | Name: %-25s | P: %7.2f บาท |" % (
                 product.id, product.name, product.price
             )
             lines.append(line)

@@ -5,33 +5,26 @@ from modules.Shopping import Product, User, AddItem, Cart
 import pandas as pd
 import os 
 
-# paths and template
 
-filepath = 'g_testing\Testing\data\csv\eng_test.csv'
-template = "อายุ {year} แผน {Class} เพศ {gender} เบี้ยประกัน {Value:,.0f} บาท"
-font_path = 'modules\THSarabunNew.ttf'
-df = pd.read_csv('out.csv')
 
-# สร้าง object ผ่าน class TableToContext
-
-table = TableToContext(filepath)
-lines = table.Table2Context(template)
-
-def table_to_context(data : pd.DataFrame, filepath : str) -> None:
+def table_to_context(filepath : str, file_name : str) -> None:
     print('====== TableToContext ======')
-
+    table = TableToContext(filepath)
     # หากต้องการดูข้อมูลที่เป็น DataFrame สามารถเรียกใช้ method ToDataFrame
     table = table.ToDataFrame(filepath=filepath) 
-    print(table.to_csv('out.csv', index=False))
+    print(table.to_csv(file_name+'.csv', index=False))
 
-def builder_test(lines : str) -> None:
+def builder_test(filepath : str, template : str,file_name : str) -> None:
     print('====== PDFBuilder ======')
 
+    table = TableToContext(filepath)
+    lines = table.render_template(template)
+    
     # export (pdf) version 0.0.1
     (PDFBuilder(font_path=font_path)
         .setup()
         .add_lines(lines=lines)
-        .save("test.pdf")
+        .save(file_name +".pdf")
         .execute())
 
     # version 0.0.0
@@ -41,10 +34,7 @@ def builder_test(lines : str) -> None:
         # add_line = PDF.add_lines(lines=lines)
         # output = PDF.save(filename='test.pdf')
 
-# Shopping
-add_item = AddItem(df)
-cart = Cart()
-print(type(cart))
+
 def run_shop_interface(add_item, cart) -> None:
     print('====== Interface ======')
     product_dict = {
@@ -97,8 +87,27 @@ def run_shop_interface(add_item, cart) -> None:
         else:
             print("  กรุณาเลือกเมนูที่ถูกต้อง (0, 1, 2, x)")
 
+
+# paths and template
+
+filepath = 'Data\csv\health_saver_origin.csv'
+template = "อายุ {year} แผน {Class} เพศ {Gender} เบี้ยประกัน {Value:,.0f} บาท"
+font_path = 'modules\THSarabunNew.ttf'
+df = pd.read_csv('out.csv')
+
+# สร้าง object ผ่าน class TableToContext
+
+table = TableToContext(filepath)
+lines = table.render_template(template)
+
+# Shopping
+add_item = AddItem(df)
+cart = Cart()
+#print(type(cart))
 def main():
     print("started")
+    #builder_test(filepath=filepath, template=template,file_name='test1')
+    #table_to_context(filepath=filepath, file_name='out')
     run_shop_interface(add_item=add_item, cart=cart)
 
 if __name__ == "__main__":
