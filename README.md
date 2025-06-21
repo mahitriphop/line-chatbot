@@ -38,6 +38,9 @@ ollama run llama3.2
 ```
 ---
 ## Output (New)
+เรามีการเพิ่มฟังก์ชันสำหรับการใช้งานบน Line-bot เรียบร้อยโดยสามารถค้นหาข้อมูลผ่าน Database ได้โดยใช้คำสั่ง ``` search <แผน> <เพศ> <อายุ> ```   ตัวอย่างเช่น ```search อายุ 35 เพศชาย แผน 5M```
+
+## Output (Old)
 
 เรามีการเอกสารใช้ .pdf หรือ .png/.jpg โดยเรานำไปแปลงเป็นตาราง (table) เช่น .csv, .xlsm เป็นต้นโดยที่ในตอนนี้เราใช้วิธีการแปลงผ่านเว็บไซต์ `https://www.extracttable.com/` แล้วนำขอมูลที่ได้มา .csv นำไปใช้งานต่อ function ที่สร้างขึ้น `trans_table2vector.py` เพื่อทำการแปลงข้อมูลที่เป็น .csv ไปเป็น text แล้วจึงแปลงเป็นเวกเตอร์ (vector) สุดท้ายนำข้อมูลไปใช้งานบน vector database โดยใช้ embeddings model และนำไปใช้เป็นฐานข้อมูลให้ Chatbot อ้างอิงจาก context เหล่านี้     
 
@@ -53,7 +56,7 @@ A: `'ค่าเบี้ยประกันสำหรับอายุ 31
 อาจเพราะ Data เป็นแบบนี้ด้วยครับ อันนี้พยายามสร้างเป็น text แล้วให้มันเรียนรู้ แต่ pattern มันคล้ายกันหมดเลยทำยาก`
 
 
-## Output (Old)
+## Output (Oldest)
 
 Data     : C:\Users\USERNAME\line-chatbot\demo\Files\Testing\pdf\medium.pdf  
 Question : standardization คืออะไร
@@ -65,5 +68,6 @@ Question : standardization คืออะไร
 ---
 
 ## Latest Version of README
+version 0.1.0 (6/21/25)
 version 0.0.1 (6/12/25)  
 version 0.0.0 (6/9/25)
